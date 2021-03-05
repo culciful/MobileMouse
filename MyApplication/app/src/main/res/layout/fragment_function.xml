@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FunctionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="模拟鼠标 下方触摸屏可移动鼠标 点击滚轮进入滚轮模式" />
+
+    <RelativeLayout
+        android:id="@+id/mouse_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+        <FrameLayout
+            android:id="@+id/left"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toStartOf="@+id/slide"
+            android:layout_alignBottom="@+id/slide"
+            android:layout_marginEnd="5dp"
+            android:background="#ebeef5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/left"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/slide"
+            android:layout_width="80dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:background="#ebeef5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/slide"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toEndOf="@+id/slide"
+            android:layout_alignBottom="@+id/slide"
+            android:layout_marginStart="5dp"
+            android:background="#ebeef5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/right"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/move"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/slide"
+            android:layout_marginTop="10dp"
+            android:background="#f0f0f0" />
+
+
+    </RelativeLayout>
+</FrameLayout>

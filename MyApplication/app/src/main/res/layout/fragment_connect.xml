@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".fragment.ConnectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/IP_demo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/ip"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_text"
+        android:inputType="text"
+        android:text="192.168.223.1"/>
+
+    <EditText
+        android:id="@+id/Port_demo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/port"
+        android:layout_marginTop="80dp"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/input_text"
+        android:inputType="number"
+        android:text="20000"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/connect"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:background="@drawable/btn_1"
+        android:textAllCaps="false" />
+</FrameLayout>
